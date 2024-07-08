@@ -104,7 +104,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let lst = list_of_tuple_from_cartesian(points);
 
-    chart.draw_series(PointSeries::of_element(lst, 3, &GREEN, &|c, s, st| {
+    chart.draw_series(PointSeries::of_element(lst, 5, &GREEN, &|c, s, st| {
         EmptyElement::at(c) + Circle::new((0, 0), s, st.filled())
     }))?;
 

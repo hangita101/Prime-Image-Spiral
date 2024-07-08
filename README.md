@@ -17,7 +17,7 @@ cargo run [path to image] [path to prime list]
 cargo run primes.png Final.txt
 ```
 
-![Example Image](./5.png)
+![Example Image](./primes.png)
 
 Basically Convert list of primes to Polar coordinate
 display that polar point into Cartesian System
