@@ -11,8 +11,17 @@ to use it
 cargo run [path to image] [path to prime list]
 ```
 
+## Example
+
+```rust
+cargo run primes.png Final.txt
+```
+
+![Example Image](./5.png)
+
 Basically Convert list of primes to Polar coordinate
 display that polar point into Cartesian System
 
   `(r,theta) -> (r*cos(theta),r*sin(theta))`
+
 

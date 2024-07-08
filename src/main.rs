@@ -71,6 +71,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let points = list_of_cartesian_from_polar(polar);
 
     let root = BitMapBackend::new(target_file_path, (10000, 10000)).into_drawing_area();
+    //Change This if you want to Change the back ground color
     root.fill(&BLACK);
     let root = root.margin(10, 10, 10, 10);
     // After this point, we should be able to construct a chart context
@@ -81,6 +82,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         .x_label_area_size(20)
         .y_label_area_size(40)
         // Finally attach a coordinate on the drawing area and make a chart context
+        //Tweak this value to change the x and y axis 
         .build_cartesian_2d(-100000f32..100000f32, -100000f32..100000f32)?;
 
     // Then we can draw a mesh
